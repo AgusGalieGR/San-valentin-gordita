@@ -9,7 +9,6 @@ let messages = [
   'Me estas viendo la cara de estupida???',
   'Mira el otro botón'
 ]
-
 buttonNo.addEventListener('click', () => {
   fontSize = fontSize + .5
   buttonYes.style.fontSize = `${fontSize}rem`
@@ -21,4 +20,7 @@ buttonNo.addEventListener('click', () => {
 
 buttonYes.addEventListener('click', () => {
   document.querySelector('#message').style.display = 'flex'
+})
+backButton.addEventListener("click", () => {
+    messageDiv.style.display = 'flex';
 })
